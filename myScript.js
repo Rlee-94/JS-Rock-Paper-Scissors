@@ -11,3 +11,14 @@ function computerPlay () {
     };
 };
 
+function playRound(playerSelection, computerSelection) {
+    //Simulating a round played 
+    if (playerSelection === computerSelection) {
+        return 'The game was a tie!'
+    };
+
+};
+
+const playerSelection = 'rock';
+const computerSelection = computerPlay();
+console.log(playRound(playerSelection, computerSelection));
