@@ -16,16 +16,33 @@ function playRound(playerSelection, computerSelection) {
     if (playerSelection === computerSelection) {
         return 'The game was a tie!'
     };
+
     if (playerSelection === 'rock') {
         if (computerSelection === 'paper') {
-            return 'Sorry, the computer won!'
+            return 'Paper beats rock, the computer won!'
         } else {
-            return 'Congrats, you won!'
+            return 'Rock beats scissors, you won!'
+        }
+    }
+
+    if (playerSelection === 'paper') {
+        if (computerSelection === 'scissors') {
+            return 'Scissors beats paper, the computer won!'
+        } else {
+            return 'Paper beats rock, you won!'
+        }
+    }
+
+    if (playerSelection === 'scissors') {
+        if (computerSelection === 'rock') {
+            return 'Rock beats scissors, the computer won!'
+        } else {
+            return 'Scissors beats paper, you won!'
         }
     }
 };
 
 //Will clean up later
-playerSelection ='rock';
+playerSelection = 'paper';
 const computerSelection = computerPlay();
 console.log(playRound(playerSelection, computerSelection));
