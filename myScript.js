@@ -16,5 +16,15 @@ function playRound(playerSelection, computerSelection) {
     if (playerSelection === computerSelection) {
         return 'The game was a tie!'
     };
-
+    if (playerSelection === 'rock') {
+        if (computerSelection === 'paper') {
+            return 'Sorry, the computer won!'
+        } else {
+            return 'Congrats, you won!'
+        }
+    }
 };
+
+playerSelection ='rock';
+const computerSelection = computerPlay();
+console.log(playRound(playerSelection, computerSelection));
