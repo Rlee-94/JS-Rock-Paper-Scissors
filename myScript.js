@@ -17,7 +17,6 @@ function computerPlay () {
 
 //Simulating a round played and adding 1 to the winners score
 function playRound(playerSelection, computerSelection) {
-    const computerSelection = computerPlay();
     if (playerSelection === computerSelection) {
         return 'The game was a tie!'
     };
@@ -56,6 +55,16 @@ function playRound(playerSelection, computerSelection) {
     }
 };
 
-//Will clean up later
-playerSelection = 'pApER';
-console.log(playRound(playerSelection, computerSelection));
+//Set rounds to 5 
+function game () {
+    playRound()
+    for (let i = 0; i < 5; i++) {
+        let playerSelection = prompt("Rock, Paper, or Scissors?")
+        const computerSelection = computerPlay()
+        console.log(playRound(playerSelection, computerSelection));
+        console.log(`Your score: ${playerScore}`)
+        console.log(`Computer score: ${computerScore}`)
+    }
+};
+
+game()
