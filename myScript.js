@@ -1,5 +1,5 @@
 
-let playerScore = 0
+let userScore = 0
 let computerScore = 0
 let userChoice
 let result
@@ -9,7 +9,7 @@ const computerChoiceDisplay = document.getElementById('computer-choice')
 const userChoiceDisplay = document.getElementById('user-choice')
 const resultDisplay = document.getElementById('game-result')
 const possibleChoices = document.querySelectorAll('button')
-const playerScoreDisplay = document.getElementById('user-score')
+const userScoreDisplay = document.getElementById('user-score')
 const computerScoreDisplay = document.getElementById('computer-score')
 
 //When button is clicked, display in user choice
@@ -18,6 +18,7 @@ const computerScoreDisplay = document.getElementById('computer-score')
     userChoiceDisplay.innerHTML = userChoice
     computerPlay();
     playRound();
+    keepScore();
  }));
 
  //Assign RPS for cpu
@@ -40,10 +41,8 @@ const computerScoreDisplay = document.getElementById('computer-score')
 //Game results
 function playRound() {
     if (computerChoice === userChoice) {
-        result = (`It\'s a draw! \n
-        Player Score: ${playerScore} Computer Score: ${computerScore}`) 
+        result = ('It\'s a draw!')
     }
-
     if (computerChoice === 'rock' &&  userChoice === 'scissors') {
         computerScore++
         result = ('rock beats scissors, you lose!')
@@ -56,23 +55,33 @@ function playRound() {
         computerScore++
         result = ('rock beats scissors, you lose!')
     }
-
     if (userChoice === 'rock' &&  computerChoice === 'scissors') {
-        playerScore++
-        result = ('rock beats scissors, you lose!')
+        userScore++
+        result = ('rock beats scissors, you win!')
     }
     if (userChoice === 'paper' &&  computerChoice === 'rock') {
-        playerScore++
-        result = ('rock beats scissors, you lose!')
+        userScore++
+        result = ('rock beats scissors, you win!')
     }
     if (userChoice === 'scissors' &&  computerChoice === 'paper') {
-        playerScore++
-        result = ('rock beats scissors, you lose!')
+        userScore++
+        result = ('rock beats scissors, you win!')
     }
 
     resultDisplay.innerHTML = result
-    playerScoreDisplay.innerHTML = playerScore
+    userScoreDisplay.innerHTML = userScore
     computerScoreDisplay.innerHTML = computerScore
+    
 };
 
-//Keep score
+//Keep score until 5
+function keepScore() {
+    if (userScore === 5 ) {
+        alert('Game Over. Congrats you won!')
+        location.reload()
+    }
+    if (computerScore === 5) {
+        alert('Game Over. Sorry you lost. ')
+        location.reload()
+    }
+};
