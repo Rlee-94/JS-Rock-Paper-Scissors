@@ -2,8 +2,6 @@
 
 Project to create a simple Rock, Paper, Scissors game. 
 
-From The Odin Project's [curriculum](https://www.theodinproject.com/lessons/foundations-rock-paper-scissors).
-
 🔗 **Live preview:** [here](https://rlee-94.github.io/JS-Rock-Paper-Scissors/)
 
 ## Built with
