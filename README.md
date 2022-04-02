@@ -1,8 +1,39 @@
-# JS-Rock-Paper-Scissors
-Rock paper scissors project involving vanilla JS code. 
+# Rock Paper Scissors
 
-I've created a simple Rock, Paper, Scissors game with an interactive UI. Players can choose Rock, Paper, or Scissors, and it will display who won the current round and keep score. Once the player or computer reaches five, an alert will trigger 'Game Over' and the webpage will reload. 
+Project to create a simple Rock, Paper, Scissors game. 
 
-Will also show the ability to use git for pushing new changes and using a separate branch to make changes that merge back into the main branch. 
+From The Odin Project's [curriculum](https://www.theodinproject.com/lessons/foundations-rock-paper-scissors).
 
-Here is the live link https://rlee-94.github.io/JS-Rock-Paper-Scissors/
+🔗 **Live preview:** [here](https://rlee-94.github.io/JS-Rock-Paper-Scissors/)
+
+## Built with
+* HTML
+* JS
+
+### Tools
+
+* Visual Studio Code
+* MacOS terminal
+* Git and GitHub
+
+
+## Outcome
+
+* Used HTML5 for better readability and structure.
+* Used **Git** and **GitHub** for project management.
+* Tried to maintain **clean code**.
+* **Cross tested** on Firefox and Chromium based browsers.
+
+## Summary
+
+### What I learned
+
+* Gained a better understanding of **Javascript** and **HTML** foundations. 
+* Improved **code structure** and **code readability**.
+* Improved **clean code** writing.
+
+
+## Author
+
+👤 **Rlee-94**
+* GitHub: [Rlee-94](https://github.com/Rlee-94)
