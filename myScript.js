@@ -49,11 +49,11 @@ function playRound() {
     }
     if (computerChoice === 'paper' &&  userChoice === 'rock') {
         computerScore++
-        result = ('rock beats scissors, you lose!')
+        result = ('paper beats rock, you lose!')
     }
     if (computerChoice === 'scissors' &&  userChoice === 'paper') {
         computerScore++
-        result = ('rock beats scissors, you lose!')
+        result = ('scissors beats paper, you lose!')
     }
     if (userChoice === 'rock' &&  computerChoice === 'scissors') {
         userScore++
@@ -61,11 +61,11 @@ function playRound() {
     }
     if (userChoice === 'paper' &&  computerChoice === 'rock') {
         userScore++
-        result = ('rock beats scissors, you win!')
+        result = ('paper beats rock, you win!')
     }
     if (userChoice === 'scissors' &&  computerChoice === 'paper') {
         userScore++
-        result = ('rock beats scissors, you win!')
+        result = ('scissors beats paper, you win!')
     }
 
     resultDisplay.innerHTML = result
