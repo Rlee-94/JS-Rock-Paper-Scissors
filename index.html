@@ -5,19 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
 </head>
 <body>
-    <h2>Computer Choice: <span id="computer-choice"></span></h2>
-    <h2>Your Choice: <span id="user-choice"></span></h2>
-    <h2 id="game-result">Result</h2>
-    <h4>Your Score:<span id="user-score"></span></h4>
-    <h4>Computer Score:<span id="computer-score"></span></h4>
-
-    <button id="rock">Rock</button>
-    <button id="paper">Paper</button>
-    <button id="scissors">Scissors</button>
+    <header><div class="header">Rock Paper Scissors</div></header>
+    <div class="container">
+            <div class="result">
+                <h2 id="game-result" class="result">Will you win?</h2>
+            </div>
+            <div class="choices">
+                <h2>Computer Choice: <span id="computer-choice"></span></h2>
+                <h2>Your Choice: <span id="user-choice"></span></h2>
+            </div>
+        <div class="scores">
+            <h4>Your Score: <span id="user-score"></span></h4>
+            <h4>Computer Score: <span id="computer-score"></span></h4>
+        </div>
+        <div class="buttons-container">
+            <button class="button" id="rock">✊</button>
+            <button class="button" id="paper">🖐</button>
+            <button class="button" id="scissors">✌️</button>
+        </div>
         
-
+    </div>
     <script src="myScript.js" defer></script>
 </body>
 </html>
