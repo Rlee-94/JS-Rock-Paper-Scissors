@@ -14,11 +14,13 @@ body {
     justify-content: center;
     font-size: 60px;
     background-color: #041C32;
+    color: #fac650;
 }
 
 .result {
     margin-bottom: 20px;
     font-size: 40px;
+    margin-bottom: 20px;
 }
 
 .container {
@@ -31,16 +33,37 @@ body {
     background-color: #04293A;
 }
 
-.choices {
-
-    margin-bottom: 100px;
+.choices-container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
     font-size: 30px;
+    height: 300px;
+    width: 850px;
+}
+
+.computer-choice {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    border: 2px solid lightgreen;
+}
+
+.user-choice {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    border: 2px solid yellow;
 }
 
 .buttons-container {
     display: flex;
     flex-direction: row;
     gap: 20px;
+    max-height: fit-content;
+    margin-bottom: 50px;
 }
 
 button {
@@ -49,6 +72,7 @@ button {
     font-size: 80px;
     border-radius: 10px;
     background-color: #064663;
+
 }
 
 button:hover {
@@ -56,6 +80,10 @@ button:hover {
 }
 
 
+.choices {
+    text-align: center;
+
+}
 
 .scores {
     font-size: 40px;
